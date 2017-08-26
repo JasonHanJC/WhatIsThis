@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MPCameraCell">
+            <rect key="frame" x="0.0" y="0.0" width="197" height="186"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="197" height="186"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5f-sX-T4J">
+                        <rect key="frame" x="0.0" y="0.0" width="197" height="186"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5p-vT-mKN">
+                        <rect key="frame" x="0.0" y="0.0" width="197" height="186"/>
+                        <color key="backgroundColor" red="0.15686274509803921" green="0.58431372549019611" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Camera" translatesAutoresizingMaskIntoConstraints="NO" id="iLH-rt-IFb">
+                        <rect key="frame" x="86" y="81" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="IGS-dR-jmS">
+                                <variation key="heightClass=regular-widthClass=regular" constant="48"/>
+                            </constraint>
+                            <constraint firstAttribute="width" constant="24" id="hSa-uc-JwG">
+                                <variation key="heightClass=regular-widthClass=regular" constant="48"/>
+                            </constraint>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="d5f-sX-T4J" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="FDM-1V-rLN"/>
+                <constraint firstItem="iLH-rt-IFb" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="IaG-p2-YCh"/>
+                <constraint firstAttribute="trailing" secondItem="d5f-sX-T4J" secondAttribute="trailing" id="N8m-Sf-l1s"/>
+                <constraint firstItem="iLH-rt-IFb" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Sez-6f-QUU"/>
+                <constraint firstItem="o5p-vT-mKN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Vq1-7t-b0Q"/>
+                <constraint firstAttribute="bottom" secondItem="o5p-vT-mKN" secondAttribute="bottom" id="eXS-r4-hc5"/>
+                <constraint firstItem="d5f-sX-T4J" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="edg-d3-SB2"/>
+                <constraint firstAttribute="bottom" secondItem="d5f-sX-T4J" secondAttribute="bottom" id="itr-sM-Jmh"/>
+                <constraint firstItem="o5p-vT-mKN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="mKM-qc-9C3"/>
+                <constraint firstAttribute="trailing" secondItem="o5p-vT-mKN" secondAttribute="trailing" id="pHm-Qo-21w"/>
+            </constraints>
+            <size key="customSize" width="197" height="186"/>
+            <connections>
+                <outlet property="cameraImageView" destination="iLH-rt-IFb" id="1ZB-sU-aCt"/>
+                <outlet property="cameraPreviewView" destination="d5f-sX-T4J" id="J1V-LH-aJk"/>
+                <outlet property="captureVeilView" destination="o5p-vT-mKN" id="Xu0-BQ-7gi"/>
+            </connections>
+            <point key="canvasLocation" x="-96" y="73"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Camera" width="48" height="48"/>
+    </resources>
+</document>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MPPhotoCell">
+            <rect key="frame" x="0.0" y="0.0" width="195" height="173"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="195" height="173"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F6b-wF-5he">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="173"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BhO-cS-ZDh">
+                        <rect key="frame" x="0.0" y="0.0" width="195" height="173"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.19578339041095885" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DeO-fW-y4p">
+                        <rect key="frame" x="167" y="4" width="24" height="24"/>
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="Iza-fm-LWH"/>
+                            <constraint firstAttribute="width" constant="24" id="Y7L-gC-MDZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VideoImage" translatesAutoresizingMaskIntoConstraints="NO" id="3RW-dt-Ye9">
+                        <rect key="frame" x="163" y="141" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="F0W-9r-4MI"/>
+                            <constraint firstAttribute="width" constant="24" id="o5U-MF-IPH"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3RW-dt-Ye9" secondAttribute="trailing" constant="8" id="2WF-YS-sG5"/>
+                <constraint firstItem="BhO-cS-ZDh" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6DO-CH-zT6"/>
+                <constraint firstAttribute="bottom" secondItem="F6b-wF-5he" secondAttribute="bottom" id="KyQ-YN-SN7"/>
+                <constraint firstItem="F6b-wF-5he" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="VBe-Zx-aDX"/>
+                <constraint firstAttribute="trailing" secondItem="BhO-cS-ZDh" secondAttribute="trailing" id="WBq-wi-hx2"/>
+                <constraint firstItem="DeO-fW-y4p" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="XKR-c2-Zpi"/>
+                <constraint firstAttribute="trailing" secondItem="DeO-fW-y4p" secondAttribute="trailing" constant="4" id="Ywo-nE-Gyq"/>
+                <constraint firstAttribute="bottom" secondItem="BhO-cS-ZDh" secondAttribute="bottom" id="cJ8-M6-bMQ"/>
+                <constraint firstAttribute="bottom" secondItem="3RW-dt-Ye9" secondAttribute="bottom" constant="8" id="hg6-p0-eoL"/>
+                <constraint firstItem="F6b-wF-5he" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vhK-mP-2eB"/>
+                <constraint firstAttribute="trailing" secondItem="F6b-wF-5he" secondAttribute="trailing" id="wX7-7P-qGh"/>
+                <constraint firstItem="BhO-cS-ZDh" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="xI6-zW-AtS"/>
+            </constraints>
+            <size key="customSize" width="195" height="173"/>
+            <connections>
+                <outlet property="imageView" destination="F6b-wF-5he" id="umr-jD-Eoy"/>
+                <outlet property="selectionOrderLabel" destination="DeO-fW-y4p" id="QFw-4J-ZeW"/>
+                <outlet property="selectionVeil" destination="BhO-cS-ZDh" id="dhL-MV-FjG"/>
+                <outlet property="videoIndicator" destination="3RW-dt-Ye9" id="pDP-Z5-4EH"/>
+            </connections>
+            <point key="canvasLocation" x="97.5" y="113.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="VideoImage" width="24" height="24"/>
+    </resources>
+</document>
