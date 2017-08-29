@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "21AF28524CFAD7953B74F4CE2203F3A9D0AFEB5F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "8C323C50E7FA5AE8A787D3A963D0C504FBEA3C65" : 9223372036854775807,
+    "21AF28524CFAD7953B74F4CE2203F3A9D0AFEB5F" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "664A36FF-7824-4833-ADD4-479A728E3A95",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "8C323C50E7FA5AE8A787D3A963D0C504FBEA3C65" : "TheOhzone-ios\/",
+    "21AF28524CFAD7953B74F4CE2203F3A9D0AFEB5F" : "WhatIsThis\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "WhatIsThis",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "WhatIsThis.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/JasonHan1990\/WhatIsThis.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "21AF28524CFAD7953B74F4CE2203F3A9D0AFEB5F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/the-oh-zone-inc\/TheOhzone-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8C323C50E7FA5AE8A787D3A963D0C504FBEA3C65"
+    }
+  ]
+}
